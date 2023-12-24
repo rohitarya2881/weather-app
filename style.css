@@ -54,12 +54,15 @@
     margin-top: 2px;
     cursor: pointer;
 }
-.search-icon:focus,input:focus{
-   outline: 2px solid green;
+.search-icon:hover,input:focus{
+   outline: 2px solid rgb(51, 223, 51);
+   padding: 2px;
 }
-.search input{
+.search input {
     padding: 4px;
     border-radius: 10px;
+    width:70%;
+    
 }
 .search-icon
 {
