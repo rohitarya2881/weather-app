@@ -6,7 +6,7 @@ let cityname = "DELHI";
 let temperatureCelsius;
 
 // Example API endpoint
-let apiUrlLoc = `http://api.openweathermap.org/geo/1.0/direct?q=${cityname}&appid=${APIkeyLoc}`;
+let apiUrlLoc = `https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&appid=${APIkeyLoc}`;
 
 // Get the current date
 const currentDate = new Date();
@@ -115,7 +115,7 @@ function search() {
 
   // Do something with the search input value
   console.log("Search input value:", cityname);
-   apiUrlLoc = `http://api.openweathermap.org/geo/1.0/direct?q=${cityname}&appid=${APIkeyLoc}`;
+   apiUrlLoc = `https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&appid=${APIkeyLoc}`;
 
 
   // Add further logic, such as making an API request or processing the input
