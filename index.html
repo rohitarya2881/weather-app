@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="image/storm.png" type="image/x-icon">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
 
     <title>weather</title>
 </head>
+
 <body>
+    <header class="app-header">
+        <h1 class="app-title"><center>Weather App</center></h1>
+    </header>
     <div class="container">
-    <div class="box">
-        <div class="search">
-            <input type="text" id="searchInput" placeholder="enter city name" spellcheck="false">
-            <div class="search-icon" id="searchButton"><i class="fa-solid fa-magnifying-glass "></i></div>
-        </div>
         
-        <div class="weather">
-            <img src="image/sunny-day.png" style="width:180px">
-            <div class="futweather">
-                <div class="futweather-content" ><p id="firstday"></p><i class="fa-solid fa-sun fa-3x" id="fstDay"></i></div>
-                <div class="futweather-content" ><p id="secondday"></p><i class="fa-solid fa-cloud-rain fa-3x" id="secDay"></i></div>
-                <div class="futweather-content" ><p id="thirdday"></p><i class="fa-solid fa-cloud-sun fa-3x" id="trdDay"></i></div>
+        <div class="box">
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="enter city name" spellcheck="false">
+                <div class="search-icon" id="searchButton"><i class="fa-solid fa-magnifying-glass "></i></div>
             </div>
-            <h1 id="temperature">50<span>&#176;</span></h1>
-            <h2 id="location">Gaya</h2>
-        </div>
-        <div class="detail">
-            <div class="col">
-                <i class="fa-solid fa-cloud-showers-water fa-2x"></i>
-                
-                <div class="humidity-per">
-                    <p class="humidity-no" id="humidityNo">50%</p>
 
-                   <p><h3>humidity</h3></p> 
-                    
+            <div class="weather">
+                <img src="image/sunny-day.png" style="width:180px">
+                <div class="futweather">
+                    <div class="futweather-content">
+                        <p id="firstday"></p><i class="fa-solid fa-sun fa-3x overflw" id="fstDay"></i>
                     </div>
-                
-
-            </div>
-
-            <div class="col">
-                <i class="fa-solid fa-wind humid fa-2x" ></i>
-                <div class="humidity-per">
-                    <p class="humidity-no" id="windSpeed">50<span class="speed-wind">km/hr</span></p>
-
-                   <p><h3>wind</h3></p> 
-                    
+                    <div class="futweather-content">
+                        <p id="secondday"></p><i class="fa-solid fa-cloud-rain fa-3x overflw" id="secDay"></i>
                     </div>
-                
-                
+                    <div class="futweather-content">
+                        <p id="thirdday"></p><i class="fa-solid fa-cloud-sun fa-3x overflw" id="trdDay"></i>
+                    </div>
+                </div>
+                <h1 id="temperature">50<span>&#176;</span></h1>
+                <h2 id="location">Gaya</h2>
+            </div>
+            <div class="detail">
+                <div class="col">
+                    <i class="fa-solid fa-cloud-showers-water fa-2x"></i>
 
+                    <div class="humidity-per">
+                        <p class="humidity-no" id="humidityNo">50%</p>
+
+                        <p>
+                        <h3>humidity</h3>
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col">
+                    <i class="fa-solid fa-wind humid fa-2x"></i>
+                    <div class="humidity-per">
+                        <p class="humidity-no" id="windSpeed">50<span class="speed-wind">km/hr</span></p>
+
+                        <p>
+                        <h3>wind</h3>
+                        </p>
+
+                    </div>
+
+
+
+                </div>
             </div>
         </div>
+
+
+
+
+
     </div>
-
-
-
-
-
-</div>
 </body>
+
 </html>
